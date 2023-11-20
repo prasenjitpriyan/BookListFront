@@ -30,7 +30,7 @@ const EditBooks = () => {
                 alert('An error happened, Please check console');
                 console.log(error);
             })
-    }, [id])
+    }, [])
 
     const handleEditBook = () => {
         const data = {
