@@ -40,7 +40,7 @@ const EditBooks = () => {
         };
         setLoading(true);
         axios
-            .put(`https://booklistback.onrender.com/books/${id}`, data)
+            .patch(`https://booklistback.onrender.com/books/${id}`, data)
             .then(() => {
                 setLoading(false);
                 enqueueSnackbar('Book Edited Successfully', { variant: 'success' })
