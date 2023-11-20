@@ -27,7 +27,7 @@ const EditBooks = () => {
             })
             .catch((error) => {
                 setLoading(false);
-                alert('An error happened, Please check console');
+                enqueueSnackbar('Error', { variant: 'error' })
                 console.log(error);
             })
     }, [])
